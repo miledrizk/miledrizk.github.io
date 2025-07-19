@@ -48,3 +48,10 @@ nav a:first-child {
   margin-left: 0px;
 }
 
+.myandroidapps a {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.0em;
+  color: #007bff;
+  text-decoration: none;
+}
