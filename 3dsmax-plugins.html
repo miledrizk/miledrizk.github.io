@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3DS Max Plugins - Miled Rizk</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .plugin {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 4px;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 1rem 0;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+  
+  <div class="container">
+    <h1>3DS Max Plugins</h1>
+    
+    <div class="plugin">
+      <h2>AutoCAD to 3DS Max CopyPaste Plugin V1.5</h2>
+      <p>A powerful plugin that allows users to copy and paste geometries directly from AutoCAD into 3DS Max with advanced filtering and customization options.</p>
+      
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/0CW6P3xfpvE"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Works with multiple open AutoCAD files</li>
+        <li>Automatically recognizes the last copied objects</li>
+        <li>Removes "Layer:" prefix for easier object selection by name</li>
+        <li>Option to remove materials from imported objects</li>
+        <li>Removes Block/Style Parent hierarchies (LinkComposite)</li>
+        <li>Auto-select imported objects when import is complete</li>
+        <li>Option to group imported objects</li>
+        <li>Integration with default AutoCAD DWG/DXF Import Options dialog</li>
+      </ul>
+      
+      <h3>New in V1.5:</h3>
+      <ul>
+        <li>Set custom path for copied AutoCAD geometries</li>
+        <li>"Use Path" checkbox to toggle between default and custom paths</li>
+        <li>Enhanced flexibility for users who change AutoCAD's Temporary Drawing File Location</li>
+      </ul>
+      
+      <p><strong>Download:</strong> The plugin can be downloaded from the description below the video on YouTube.</p>
+    </div>
+    
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</body>
+</html>
