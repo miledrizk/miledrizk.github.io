@@ -38,6 +38,38 @@
     .back-link:hover {
       text-decoration: underline;
     }
+    .nav-menu {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-menu h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-menu li {
+      margin-bottom: 0.5rem;
+    }
+    .nav-menu a {
+      color: #007bff;
+      text-decoration: none;
+      display: block;
+      padding: 0.25rem 0;
+    }
+    .nav-menu a:hover {
+      text-decoration: underline;
+      background: #e9ecef;
+      padding-left: 0.5rem;
+      transition: all 0.2s ease;
+    }
   </style>
 </head>
 <body>
@@ -49,7 +81,14 @@
   <div class="container">
     <h1>Rhino Plugins</h1>
     
-    <div class="plugin">
+    <div class="nav-menu">
+      <h3>Quick Navigation</h3>
+      <ul>
+        <li><a href="#dimtostatic">DimToStatic</a></li>
+      </ul>
+    </div>
+    
+    <div class="plugin" id="dimtostatic">
       <h2>DimToStatic</h2>
       <p>A Rhino plugin that converts dynamic dimensions to static dimensions.</p>
       
