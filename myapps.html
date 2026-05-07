@@ -5,6 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guess The Sequence - Android App by Miled Rizk</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .nav-menu {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-menu h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-menu li {
+      margin-bottom: 0.5rem;
+    }
+    .nav-menu a {
+      color: #007bff;
+      text-decoration: none;
+      display: block;
+      padding: 0.25rem 0;
+    }
+    .nav-menu a:hover {
+      text-decoration: underline;
+      background: #e9ecef;
+      padding-left: 0.5rem;
+      transition: all 0.2s ease;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -13,6 +47,15 @@
   </nav>
   <div class="container">
     <h1>Guess The Sequence</h1>
+    
+    <div class="nav-menu">
+      <h3>Quick Navigation</h3>
+      <ul>
+        <li><a href="#guess-sequence">Guess The Sequence</a></li>
+      </ul>
+    </div>
+    
+    <div id="guess-sequence">
     <p>
       <strong>Guess The Sequence</strong> is my latest Android app! Challenge and train your short-term memory and your focus capability.<br>
       Find a strategy to guess the sequence. Perfect for all ages.
@@ -27,6 +70,7 @@
     <a href="https://play.google.com/store/apps/details?id=com.companyname.guesssequence&pcampaignid=web_share" target="_blank">
       <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="height:60px;">
     </a>
+    </div>
   </div>
 </body>
 </html>
