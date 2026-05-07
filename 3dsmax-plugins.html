@@ -38,6 +38,38 @@
     .back-link:hover {
       text-decoration: underline;
     }
+    .nav-menu {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-menu h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-menu li {
+      margin-bottom: 0.5rem;
+    }
+    .nav-menu a {
+      color: #007bff;
+      text-decoration: none;
+      display: block;
+      padding: 0.25rem 0;
+    }
+    .nav-menu a:hover {
+      text-decoration: underline;
+      background: #e9ecef;
+      padding-left: 0.5rem;
+      transition: all 0.2s ease;
+    }
   </style>
 </head>
 <body>
@@ -49,7 +81,15 @@
   <div class="container">
     <h1>3DS Max Plugins</h1>
     
-    <div class="plugin">
+    <div class="nav-menu">
+      <h3>Quick Navigation</h3>
+      <ul>
+        <li><a href="#autocad-3dsmax">AutoCAD to 3DS Max CopyPaste Plugin V1.5</a></li>
+        <li><a href="#multiple-sections">Multiple Sections v1.5</a></li>
+      </ul>
+    </div>
+    
+    <div class="plugin" id="autocad-3dsmax">
       <h2>AutoCAD to 3DS Max CopyPaste Plugin V1.5</h2>
       <p>A powerful plugin that allows users to copy and paste geometries directly from AutoCAD into 3DS Max with advanced filtering and customization options.</p>
       
@@ -84,7 +124,7 @@
       <p><strong>Download:</strong> The plugin can be downloaded from the description below the video on YouTube.</p>
     </div>
     
-    <div class="plugin">
+    <div class="plugin" id="multiple-sections">
       <h2>Multiple Sections v1.5</h2>
       <p>A powerful 3DS Max plugin that creates multiple 2D sections on the 3 axes with advanced control options and vertex cleaning functionality.</p>
       
