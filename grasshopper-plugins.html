@@ -38,6 +38,38 @@
     .back-link:hover {
       text-decoration: underline;
     }
+    .nav-menu {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-menu h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-menu li {
+      margin-bottom: 0.5rem;
+    }
+    .nav-menu a {
+      color: #007bff;
+      text-decoration: none;
+      display: block;
+      padding: 0.25rem 0;
+    }
+    .nav-menu a:hover {
+      text-decoration: underline;
+      background: #e9ecef;
+      padding-left: 0.5rem;
+      transition: all 0.2s ease;
+    }
   </style>
 </head>
 <body>
@@ -49,7 +81,15 @@
   <div class="container">
     <h1>Grasshopper Plugins</h1>
     
-    <div class="plugin">
+    <div class="nav-menu">
+      <h3>Quick Navigation</h3>
+      <ul>
+        <li><a href="#extrude-to-surface">Extrude To Surface V1.5</a></li>
+        <li><a href="#numbetween">NumBetween</a></li>
+      </ul>
+    </div>
+    
+    <div class="plugin" id="extrude-to-surface">
       <h2>Extrude To Surface V1.5</h2>
       <p>A powerful Grasshopper plugin that allows you to create complex extrusions to target surfaces with precision and control.</p>
       
@@ -73,7 +113,7 @@
       <p><strong>Download:</strong> The plugin can be downloaded from the description below the video on YouTube.</p>
     </div>
     
-    <div class="plugin">
+    <div class="plugin" id="numbetween">
       <h2>NumBetween</h2>
       <p>A versatile Grasshopper plugin that generates numbers between specified ranges with customizable parameters.</p>
       
