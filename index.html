@@ -13,10 +13,49 @@
   
   <div class="hero-section">
     <div class="hero-content">
-      <img src="Profile.jpg" alt="Miled Rizk - Mobile, Desktop Apps and 3D plugins Developer" class="profile-image" />
-      <div class="hero-text">
-        <h1>Miled Rizk</h1>
-        <p class="tagline">Mobile, Desktop Apps and 3D plugins Developer</p>
+      <div class="profile-section">
+        <img src="Profile.jpg" alt="Miled Rizk" class="profile-pic" />
+        <div class="text-content">
+          <h1>Miled Rizk</h1>
+          <h2>3D Tools & Software Developer</h2>
+          <p>I build powerful plugins, apps and tools that enhance creativity, boost productivity and simplify complex workflows.</p>
+        </div>
+      </div>
+      
+      <div class="hero-graphics">
+        <div class="abstract-bg"></div>
+      </div>
+      
+      <div class="hero-sidebar">
+        <div class="software-icons">
+          <div class="icon-item">
+            <img src="rhino3d-icon-lg.png" alt="Rhino Logo">
+            <span>Rhino</span>
+          </div>
+          <div class="icon-item">
+            <img src="grasshopper.png" alt="Grasshopper Logo">
+            <span>Grasshopper</span>
+          </div>
+          <div class="icon-item">
+            <img src="3ds-max-seeklogo.png" alt="3DS Max Logo">
+            <span>3DS Max</span>
+          </div>
+          <div class="icon-item">
+            <div class="android-icon">📱</div>
+            <span>Android</span>
+          </div>
+        </div>
+        
+        <div class="hero-buttons">
+          <a href="about.html" class="btn-primary">
+            <span class="btn-icon">✉</span>
+            Contact Me
+          </a>
+          <a href="#projects" class="btn-secondary">
+            <span class="btn-icon">📋</span>
+            View My Work
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -66,5 +105,26 @@
     </div>
   </main>
   
+<script>
+  // Handle navigation behaviors
+  document.addEventListener('DOMContentLoaded', function() {
+    // View My Work button - navigate to projects section
+    const viewWorkBtn = document.querySelector('a[href="#projects"]');
+    if (viewWorkBtn) {
+      viewWorkBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const projectsSection = document.querySelector('.projects-header');
+        if (projectsSection) {
+          projectsSection.scrollIntoView({ behavior: 'smooth' });
+        // Focus on the first project card
+          const firstProjectCard = document.querySelector('.project-card');
+          if (firstProjectCard) {
+            firstProjectCard.focus();
+          }
+        }
+      });
+    }
+  });
+</script>
 </body>
 </html>
