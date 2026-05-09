@@ -16,8 +16,8 @@
     <div class="about-hero">
       <img src="Profile.jpg" alt="Miled Rizk" class="about-profile-image" />
       <div class="about-header">
-        <h1>About Me</h1>
-        <p class="about-tagline">Mobile, Desktop Apps & 3D Plugins Developer</p>
+        <h1>3D Tools & Software Developer</h1>
+        <p>I build powerful plugins, apps and tools that enhance creativity, boost productivity and simplify complex workflows.</p>
       </div>
     </div>
     
@@ -50,7 +50,7 @@
         </div>
       </div>
       
-      <div class="about-section">
+      <div class="about-section" id="contact">
         <h2>📧 Get In Touch</h2>
         <div class="contact-grid">
           <div class="contact-item">
@@ -71,6 +71,33 @@
       </div>
     </div>
   </div>
+<script>
+  // Handle Contact Me navigation
+  document.addEventListener('DOMContentLoaded', function() {
+    // Contact Me button - navigate to Get In Touch section
+    const contactLinks = document.querySelectorAll('a[href="#contact"]');
+    contactLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Handle both same-page navigation and external navigation
+        if (link.href.includes('#contact')) {
+          const contactSection = document.querySelector('#contact');
+          if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        } else if (link.href.includes('about.html')) {
+          // External navigation to about page - scroll to contact section after page loads
+          setTimeout(() => {
+            const contactSection = document.querySelector('#contact');
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }, 100);
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
 
