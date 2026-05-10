@@ -71,32 +71,5 @@
       </div>
     </div>
   </div>
-<script>
-  // Handle Contact Me navigation
-  document.addEventListener('DOMContentLoaded', function() {
-    // Check if URL has hash and scroll to section
-    if (window.location.hash === '#contact') {
-      setTimeout(() => {
-        const contactSection = document.querySelector('#contact');
-        if (contactSection) {
-          contactSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-    
-    // Handle same-page navigation
-    const contactLinks = document.querySelectorAll('a[href="#contact"]');
-    contactLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const contactSection = document.querySelector('#contact');
-        if (contactSection) {
-          contactSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-  });
-</script>
 </body>
 </html>
-
