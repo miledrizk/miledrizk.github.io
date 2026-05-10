@@ -630,6 +630,7 @@ nav a:first-child {
     box-shadow: none;
     backdrop-filter: none;
     padding: 10px;
+    text-align: center;
   }
   
   .hero-graphics {
