@@ -607,7 +607,7 @@ nav a:first-child {
 @media (max-width: 1024px) {
   .hero-content {
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     text-align: center;
   }
   
@@ -616,18 +616,18 @@ nav a:first-child {
     top: auto;
     right: auto;
     transform: none;
-    margin-top: 20px;
+    margin-top: 10px;
     background: transparent;
     box-shadow: none;
     backdrop-filter: none;
-    padding: 20px;
+    padding: 15px;
   }
   
   .hero-graphics {
     position: static;
     width: 100%;
-    height: 150px;
-    margin-bottom: 20px;
+    height: 120px;
+    margin-bottom: 10px;
   }
 }
 
