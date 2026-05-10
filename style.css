@@ -447,19 +447,39 @@ nav a:first-child {
     padding: 25px 20px;
   }
   
-  /* Prevent horizontal scrolling */
+  /* Prevent horizontal scrolling and fix centering */
   body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
   
   .hero-section {
     width: 100%;
     max-width: 100%;
+    padding: 20px 15px;
+    margin: 0;
+  }
+  
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
   
   .profile-section {
     width: 100%;
     max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .text-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
