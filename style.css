@@ -131,6 +131,7 @@ nav a:first-child {
   object-fit: cover;
   box-shadow: 0 8px 25px rgba(0, 123, 255, 0.25);
   transition: transform 0.3s ease;
+  margin-top: 15px;
 }
 
 .profile-pic:hover {
@@ -459,6 +460,9 @@ nav a:first-child {
     max-width: 100%;
     padding: 20px 15px;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .hero-content {
@@ -466,6 +470,9 @@ nav a:first-child {
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .profile-section {
@@ -473,6 +480,9 @@ nav a:first-child {
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .text-content {
@@ -480,6 +490,7 @@ nav a:first-child {
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
+    text-align: center;
   }
 }
 
