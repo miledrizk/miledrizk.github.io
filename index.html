@@ -12,13 +12,6 @@
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 </head>
 <body>
-  <noscript>
-    <div style="background: #ff6b6b; color: white; padding: 20px; text-align: center; font-family: Arial, sans-serif;">
-      <h2>JavaScript Required</h2>
-      <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
-    </div>
-  </noscript>
-  
   <nav>
       <a href="about.html">About</a>
   </nav>
@@ -73,7 +66,7 @@
   </div>
 
   <main>
-    <div class="projects-header">
+    <div class="projects-header" id="projects">
       <h2>Explore My Work</h2>
       <p class="projects-subtitle">Discover my range of development projects across different platforms</p>
     </div>
@@ -117,26 +110,5 @@
     </div>
   </main>
   
-<script>
-  // Handle navigation behaviors
-  document.addEventListener('DOMContentLoaded', function() {
-    // View My Work button - navigate to projects section
-    const viewWorkBtn = document.querySelector('a[href="#projects"]');
-    if (viewWorkBtn) {
-      viewWorkBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const projectsSection = document.querySelector('.projects-header');
-        if (projectsSection) {
-          projectsSection.scrollIntoView({ behavior: 'smooth' });
-        // Focus on the first project card
-          const firstProjectCard = document.querySelector('.project-card');
-          if (firstProjectCard) {
-            firstProjectCard.focus();
-          }
-        }
-      });
-    }
-  });
-</script>
 </body>
 </html>
