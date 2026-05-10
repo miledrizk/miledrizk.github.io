@@ -446,6 +446,21 @@ nav a:first-child {
   .project-card {
     padding: 25px 20px;
   }
+  
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+  
+  .hero-section {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .profile-section {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
