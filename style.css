@@ -119,7 +119,9 @@ nav a:first-child {
   padding: 30px;
   border-radius: 16px;
   flex-shrink: 0;
-  background: transparent;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .profile-pic {
