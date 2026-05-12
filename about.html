@@ -77,5 +77,22 @@
     
     <a href="index.html" class="back-link">← Back to Home</a>
   </div>
+<script>
+  // Disable right-click on profile images
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target.classList.contains('profile-img') || e.target.classList.contains('profile-pic') || e.target.classList.contains('about-profile-image')) {
+      e.preventDefault();
+      return false;
+    }
+  });
+  
+  // Disable drag and drop on profile images
+  document.addEventListener('dragstart', function(e) {
+    if (e.target.classList.contains('profile-img') || e.target.classList.contains('profile-pic') || e.target.classList.contains('about-profile-image')) {
+      e.preventDefault();
+      return false;
+    }
+  });
+</script>
 </body>
 </html>
