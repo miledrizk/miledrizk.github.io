@@ -73,6 +73,29 @@
       padding-left: 0.5rem;
       transition: all 0.2s ease;
     }
+    
+    /* Mobile responsive navigation */
+    @media (max-width: 600px) {
+      .nav-menu ul {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+      }
+      
+      .nav-menu li {
+        margin-bottom: 0.3rem;
+      }
+      
+      .nav-menu a {
+        font-size: 0.9em;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+    
+    @media (min-width: 601px) and (max-width: 768px) {
+      .nav-menu ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   </style>
 </head>
 <body>
