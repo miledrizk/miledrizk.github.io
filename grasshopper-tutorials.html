@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grasshopper Tutorials - Miled Rizk</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="Profile.jpg" />
+  <link rel="shortcut icon" href="Profile.jpg" />
+  <style>
+    .tutorial {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 4px;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 1rem 0;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .nav-menu {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-menu h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
+    .nav-menu li {
+      margin-bottom: 0.5rem;
+    }
+    .nav-menu a {
+      color: #007bff;
+      text-decoration: none;
+      display: block;
+      padding: 0.25rem 0;
+    }
+    .nav-menu a:hover {
+      text-decoration: underline;
+      background: #e9ecef;
+      padding-left: 0.5rem;
+      transition: all 0.2s ease;
+    }
+    
+    /* Mobile responsive navigation */
+    @media (max-width: 600px) {
+      .nav-menu ul {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+      }
+      
+      .nav-menu li {
+        margin-bottom: 0.3rem;
+      }
+      
+      .nav-menu a {
+        font-size: 0.9em;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+    
+    @media (min-width: 601px) and (max-width: 768px) {
+      .nav-menu ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+  
+  <div class="container">
+    <h1>Grasshopper Tutorials</h1>
+    
+    <div class="nav-menu">
+      <h3>Quick Navigation</h3>
+      <ul>
+        <li><a href="#pendant-lamp">Grasshopper 3D - Pendant Lamp Tutorial</a></li>
+      </ul>
+    </div>
+    
+    <div class="tutorial" id="pendant-lamp">
+      <h2>Grasshopper 3D - Pendant Lamp Tutorial</h2>
+      <p>In this grasshopper tutorial, we will model a parametric pendant lamp. You'll learn about multiple components and how to approach a model like this.</p>
+      
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/nvwsjL3IfvM" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+      <h3>What You'll Learn:</h3>
+      <ul>
+        <li>Parametric modeling techniques in Grasshopper</li>
+        <li>Working with multiple Grasshopper components</li>
+        <li>Approach to modeling complex geometric forms</li>
+        <li>Creating a parametric pendant lamp from scratch</li>
+      </ul>
+    </div>
+    
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</body>
+</html>
