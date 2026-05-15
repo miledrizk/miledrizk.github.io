@@ -86,31 +86,31 @@
     <div class="nav-menu">
       <h3>Quick Navigation</h3>
       <ul>
-        <li><a href="#dimtostatic">DimToStatic</a></li>
+        <li><a href="#dimtostatic-update">Rhino 8-Plugin [Update]-Convert Dimensions Between Dynamic And Static</a></li>
       </ul>
     </div>
     
-    <div class="plugin" id="dimtostatic">
-      <h2>DimToStatic</h2>
-      <p>A Rhino plugin that converts dynamic dimensions to static dimensions.</p>
-      
-      <div class="video-container">
-        <iframe 
-          src="https://www.youtube.com/embed/8GkQYq2WDB8" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
-      
-      <h3>Features:</h3>
-      <ul>
-        <li>Convert dynamic dimensions to static dimensions with a simple command</li>
-        <li>Compatible with various dimension types in Rhino</li>
-      </ul>
-      
-      <p><strong>Download:</strong> The plugin can be downloaded from the description below the video on YouTube.</p>
-    </div>
+    <div class="plugin" id="dimtostatic-update">
+  <h2>Rhino 8-Plugin [Update]-Convert Dimensions Between Dynamic And Static</h2>
+  <p>In this updated version, I added a second command called StaticToDim that enables the user to convert/revert static dimensions back to dynamic.
+  The first version only had one command, DimToStatic, that converts dynamic dimensions into static dimensions, which is useful in scenarios where you don't want the dimensions to update when scaling the scene objects. For example, in cases where you want to print out, and you want to scale the drawing to fit a paper size, etc.
+  The reason for the second command is that you might save the file before undoing the scene, and the dimensions are still static, or if you receive a file with static dimensions.</p>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/rz_0bOq5QUo" 
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <h3>What's New:</h3>
+  <ul>
+    <li>New <strong>StaticToDim</strong> command: revert static dimensions back to dynamic</li>
+    <li>Original <strong>DimToStatic</strong> command: make dynamic dimensions static for printing and for cases where you don’t want dimension values to update as you scale the drawing</li>
+    <li>Improved workflow for files with mixed/static dimensions</li>
+  </ul>
+  <p><strong>Download:</strong> Get the latest plugin version from the YouTube video description.</p>
+</div>
     
     <a href="index.html" class="back-link">← Back to Home</a>
   </div>
