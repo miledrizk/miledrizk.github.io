@@ -56,6 +56,9 @@
       list-style: none;
       padding: 0;
       margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
     }
     .nav-menu li {
       margin-bottom: 0.5rem;
@@ -71,6 +74,58 @@
       background: #e9ecef;
       padding-left: 0.5rem;
       transition: all 0.2s ease;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .back-to-top:hover {
+      background: #0056b3;
+      transform: translateY(-3px);
+    }
+    .back-to-top.visible {
+      display: flex;
+    }
+    @media (max-width: 600px) {
+      .nav-menu ul {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+      }
+      .nav-menu li {
+        margin-bottom: 0.3rem;
+      }
+      .nav-menu a {
+        font-size: 0.9em;
+        padding: 0.3rem 0.5rem;
+      }
+      .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+      }
+    }
+    @media (min-width: 601px) and (max-width: 768px) {
+      .nav-menu ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   </style>
 </head>
@@ -141,5 +196,23 @@
     
     <a href="index.html" class="back-link">← Back to Home</a>
   </div>
+
+  <a href="#" class="back-to-top" aria-label="Back to top" id="backToTop">↑</a>
+  <script>
+    (function() {
+      const btn = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      });
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
 </body>
 </html>
