@@ -8,6 +8,9 @@
   <link rel="icon" type="image/jpeg" href="Profile.jpg" />
   <link rel="shortcut icon" href="Profile.jpg" />
   <style>
+    body {
+      display: block !important;
+    }
     .tutorial {
       margin-bottom: 3rem;
       padding: 1.5rem;
@@ -100,9 +103,11 @@
     }
 
     .back-to-top {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
+      position: fixed !important;
+      bottom: 2rem !important;
+      right: 2rem !important;
+      left: auto !important;
+      top: auto !important;
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -122,6 +127,14 @@
       -webkit-transform: translateZ(0);
       pointer-events: auto;
       touch-action: manipulation;
+      flex: none !important;
+      flex-shrink: 0 !important;
+      flex-grow: 0 !important;
+      align-self: auto !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      max-width: 50px;
+      max-height: 50px;
     }
     .back-to-top:hover {
       background: #0056b3;
@@ -132,11 +145,13 @@
     }
     @media (max-width: 600px) {
       .back-to-top {
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 1rem !important;
+        right: 1rem !important;
         width: 44px;
         height: 44px;
         font-size: 1.3rem;
+        max-width: 44px;
+        max-height: 44px;
       }
     }
   </style>
