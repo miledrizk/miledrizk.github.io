@@ -116,15 +116,19 @@
       font-size: 1.5rem;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
-      z-index: 1000;
+      z-index: 9999;
       text-decoration: none;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      pointer-events: auto;
+      touch-action: manipulation;
     }
     .back-to-top:hover {
       background: #0056b3;
       transform: translateY(-3px);
     }
     .back-to-top.visible {
-      display: flex;
+      display: flex !important;
     }
     @media (max-width: 600px) {
       .back-to-top {
@@ -347,17 +351,34 @@
   <script>
     (function() {
       const btn = document.getElementById('backToTop');
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > 400) {
+      let ticking = false;
+      function updateVisibility() {
+        const scrollY = window.pageYOffset || window.scrollY || document.documentElement.scrollTop;
+        if (scrollY > 400) {
           btn.classList.add('visible');
         } else {
           btn.classList.remove('visible');
         }
-      });
+        ticking = false;
+      }
+      function onScroll() {
+        if (!ticking) {
+          window.requestAnimationFrame(updateVisibility);
+          ticking = true;
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('touchmove', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
       btn.addEventListener('click', function(e) {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
+      btn.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      updateVisibility();
     })();
   </script>
 </body>
