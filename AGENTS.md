@@ -15,7 +15,7 @@ The landing page at `index.html` displays a stats count on each project card. Th
 | Grasshopper Tutorials | `grasshopper-tutorials.html` | 20 tutorials | Count of `class="tutorial"` |
 | Rhino Plugins | `rhino-plugins.html` | 1 plugin | Count of `class="plugin"` |
 | 3DS Max Plugins | `3dsmax-plugins.html` | 11 plugins | Count of `class="plugin"` |
-| 3DS Max Tutorials | `3dsmax-tutorials.html` | 7 tutorials | Count of `class="tutorial"` |
+| 3DS Max Tutorials | `3dsmax-tutorials.html` | 10 tutorials | Count of `class="tutorial"` |
 
 ### PowerShell Command to Recount
 
