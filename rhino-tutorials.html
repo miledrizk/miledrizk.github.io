@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rhino Tutorials - Miled Rizk</title>
+  <link rel="canonical" href="https://miledrizk.com/rhino-tutorials.html" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="Profile.jpg" />
+  <link rel="shortcut icon" href="Profile.jpg" />
+  <style>
+    .tutorial {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 4px;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 1rem 0;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .nav-menu {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-menu h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
+    .nav-menu li {
+      margin-bottom: 0.5rem;
+    }
+    .nav-menu a {
+      color: #007bff;
+      text-decoration: none;
+      display: block;
+      padding: 0.25rem 0;
+    }
+    .nav-menu a:hover {
+      text-decoration: underline;
+      background: #e9ecef;
+      padding-left: 0.5rem;
+      transition: all 0.2s ease;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .back-to-top:hover {
+      background: #0056b3;
+      transform: translateY(-3px);
+    }
+    .back-to-top.visible {
+      display: flex;
+    }
+    @media (max-width: 600px) {
+      .nav-menu ul {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+      }
+      .nav-menu li {
+        margin-bottom: 0.3rem;
+      }
+      .nav-menu a {
+        font-size: 0.9em;
+        padding: 0.3rem 0.5rem;
+      }
+      .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+      }
+    }
+    @media (min-width: 601px) and (max-width: 768px) {
+      .nav-menu ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+  
+  <div class="container">
+    <h1>Rhino Tutorials</h1>
+    
+    <div class="nav-menu">
+      <h3>Quick Navigation</h3>
+      <ul>
+        <li><a href="#save-multiple-window-layouts">Rhino 8 - Save Multiple Window Layouts</a></li>
+      </ul>
+    </div>
+    
+    <div class="tutorial" id="save-multiple-window-layouts">
+      <h2>Rhino 8 - Save Multiple Window Layouts</h2>
+      <p>Depending on the type of your project, you might need a different set of tools for your Rhino window's layout. In this tutorial, you will learn how to save multiple window layouts for later use. Also, this is useful when Rhino, for some reason, resets your layout after you open it.</p>
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/Ky9JuQ4uDR4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <h3>What You'll Learn:</h3>
+      <ul>
+        <li>How to save multiple window layouts in Rhino 8</li>
+        <li>Restoring saved layouts for different project types</li>
+        <li>Recovering your layout after Rhino resets it</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <a href="#" class="back-to-top" aria-label="Back to top" id="backToTop">↑</a>
+  <script>
+    (function() {
+      const btn = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      });
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+</body>
+</html>
